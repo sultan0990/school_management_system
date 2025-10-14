@@ -1,6 +1,3 @@
-// Real Backend API - Express.js + MongoDB
-// backend/package.json
-
 {
   "name": "school-management-backend",
   "version": "1.0.0",
