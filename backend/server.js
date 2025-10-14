@@ -40,17 +40,11 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/school_ma
 
 // Import Routes
 const authRoutes = require('./routes/auth');
-const studentRoutes = require('./routes/students');
-const teacherRoutes = require('./routes/teachers');
 const adminRoutes = require('./routes/admin');
-const otpRoutes = require('./routes/otp');
 
 // Use Routes
 app.use('/api/auth', authRoutes);
-app.use('/api/students', studentRoutes);
-app.use('/api/teachers', teacherRoutes);
 app.use('/api/admin', adminRoutes);
-app.use('/api/otp', otpRoutes);
 
 // Health Check
 app.get('/api/health', (req, res) => {
